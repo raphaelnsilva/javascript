@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">  
+    <title>Primeiros passo com DOM</title>
+    <style>
+        body {
+            background: rgb(5, 5, 5);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head> 
+<body>
+
+    <h1>Iniciando estudos DOM</h1>
+    <h1>Vamos aprender DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div  id="msg1">primeiro teste</div>
+    <div name="msg2">segundo teste</div>
+    <div class="msg3">terceiro teste</div>
+
+    <script>
+        //acessando por marca (TagName) podemos selecionar mais de um obejto
+        /*
+        var h1 = window.document.getElementsByTagName('h1')[1]
+        window.document.write('esta escrito assim: ' + h1.innerText)
+
+        /*
+        var corpo = window.document.getElementsByTagName('body')[0]
+        corpo.style.background = 'blue'
+
+        //acessando por ID (NameId), Name (ByName) e Classe (ByClass)
+        /*
+        var div1 = window.document.getElementById('msg1')
+        var div2 = window.document.getElementsByName('msg2')[0]
+        var div3 = window.document.getElementsByClassName('msg3')[0]
+        div1.style.color = 'red'
+        div2.style.color = 'green'
+        div3.style.color = 'blue'
+
+        //acessando por Seletor (querySelector)
+        var div1 = window.document.querySelector('div#msg1')
+        var div2 = window.document.querySelector('div.msg3')
+        div1.style.color = 'red'
+        div2.style.color = 'green'
+        */
+    </script>
+</body>
+</html>
