@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Nacionalidade</title>
+</head>
+<body>
+    <h1>Pesquisa de nacionalidade Brasileira</h1>
+    Digite seu país de origem <input type="text" name="pais" id="pais">
+    <input type="button" value="Resultado" onclick="verificar()">
+    <div id="res">
+
+    <script>
+        function verificar() {
+            var p = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            if (pais == 'brasil') {
+                res.innerHTML = 'você é brasileiro!'
+            } else  {
+                res.innerHTML = 'você é estrangeiro!'
+            }
+        }
+    </script>
+
+</body>
+</html>
