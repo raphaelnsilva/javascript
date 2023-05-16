@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de vogais</title>
+</head>
+<body>
+    <h1>teste de vogais e consoantes</h1>
+    <h2>digite uma letra: </h2>
+    <input type="text" name="letra" id="letra">
+    <input type="button" value="resultado" onclick="result()">
+    <div id="res">
+
+    <script>
+        function result() {
+            var l = document.getElementById('letra')
+            var res = document.getElementById('res')
+            var show = String(l.value)
+            if (l.value == "a") {
+                res.innerHTML = `a letra "${show}" é uma vogal!`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -16,10 +16,10 @@
         function verificar() {
             var p = window.document.getElementById('pais')
             var res = window.document.getElementById('res')
-            if (pais == 'brasil') {
-                res.innerHTML = 'você é brasileiro!'
+            if (pais.value == 'brasil') {
+                res.innerHTML = '<p>você é brasileiro!</p>'
             } else  {
-                res.innerHTML = 'você é estrangeiro!'
+                res.innerHTML = '<p>você é estrangeiro!</p>'
             }
         }
     </script>
