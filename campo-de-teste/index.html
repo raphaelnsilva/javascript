@@ -1,45 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de imagens</title>
-    <style>
-        body {
-            background-color: rgb(128, 172, 255);
-        }
-
-        .cont {
-            margin: auto;
-            background-color: rgba(51, 50, 50, 0.212);
-            height: 500px;
-            width: 500px;
-            border-radius: 10px;
-        }
-        
-        div > h1 {
-            padding-top: 10px;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-shadow: 2px 2px 2px black;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="script/script.js"></script>
 </head>
 <body>
-    <div class="cont">
-        <h1>testando imagem</h1>
-        <div id="imagem"></div>
-    </div>
-    
-    
-    <script>
-        
-        document.getElementById('imagem')
-        .innerHTML = "<img src='crianca-m.png'>"
-        imagem.style.textAlign = 'center'
 
-    </script>
+    <header class="conteudo">
+        <h1>Estudos de JavaScript</h1>
+        <h2>site desenvolvido por Raphael</h2>
+        
+    </header>
+
+    <main>
+        <article>
+            <h1>window.alert</h1>
+            <p>Temos propriedades no JavaScript que exibem alertar em formato de caixa em seu navegador. Enttre as mais usadas temos</p>
+            <ul>
+                <li>window.alert</li>
+                <li>window.confirm</li>
+            </ul>
+            
+        </article>
+    </main>
 </body>
 </html>

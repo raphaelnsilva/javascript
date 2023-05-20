@@ -24,13 +24,13 @@
 
     <script>
         var a = window.document.getElementById('area')
-        a.addEventListener('click',clicar)
-        a.addEventListener('mouseenter', entrar)
-        a.addEventListener('mouseout', sair)
+        a.addEventListener('click',clicar) //quando clica o background muda
+        a.addEventListener('mouseenter', entrar) //quando entra o Text muda
+        a.addEventListener('mouseout', sair) //quando sai o text muda
 
         function clicar() {
-            a.innerText = 'clicou!'
-            a.style.background = 'red'
+            a.innerText = 'clicou!' //innerTEXT mostra o texto
+            a.style.background = 'red' // muda o background da div id="area"
         }
         
         function entrar() {
