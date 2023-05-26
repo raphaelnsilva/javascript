@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .botao {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média do aluno v1.0</h1>
+    <button class="botao" onclick="somar()">Calcular média</button>
+    <p class="result">O resultado vai aparecer aqui</p>
+    
+    <script>
+        function somar() {
+            var nome = window.prompt('Qual é o nome do aluno?')
+            var media1 = Number(window.prompt('Qual é sua primeira nota? :'))
+            var media2 = Number(window.prompt(`Além de ${media1} qual foi sua outra nota? :`))
+            media = (media1 + media2)/2
+
+            var res = document.querySelector('.result')
+            res.innerHTML = `<p>Calculando a média final de ${nome}</p>`
+            res.innerHTML += `<p>As notas obtidas foram ${media1} e ${media2}</p>`
+            res.innerHTML += `<p>A média final será ${media}</p>`
+        }
+    </script>
+</body>
+</html>
