@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando idade</h1>
+    <button onclick="calcular()">Iniciar</button>
+    <p id="result">Caculando sua idade...</p>
+
+    <script>
+        function calcular() {
+            var agora = new Date
+            var ano = agora.getFullYear()
+
+            var nasc = Number(window.prompt('Digite o ano que você nasceu:'))
+            var idade = ano - nasc
+
+            var res = document.querySelector('#result')
+            res.innerHTML = `<p>Quem nasceu em ${nasc} vai completar <strong>${idade}</strong> em ${ano}</p>`
+        }
+    </script>
+</body>
+</html>
