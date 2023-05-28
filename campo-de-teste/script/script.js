@@ -1,5 +1,6 @@
-function clicar() {
-    window.alert ('olá')
-    window.confirm('esta gostando?')
-    window.prompt('qual é o seu nome?')
-}
+const $html = document.querySelector('html')
+const $checkbox = document.querySelector('#switch')
+
+$checkbox.addEventListener('change', function() {
+  $html.classList.toggle('modo-escuro')
+})

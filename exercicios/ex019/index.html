@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Múltiplas ações</h1>
+    <button onclick="calcular()">Clique para iniciar</button>
+    <p id="result">Clique no botão acima para começar.</p>
+
+    <script>
+        function calcular() {
+            var valor1 = Number(window.prompt('Primeiro valor:'))
+            var valor2 = Number(window.prompt('Segundo valor:'))
+            var op = Number(window.prompt(`Valores informados: ${valor1} e ${valor2}. \nOque vamos fazer? \n[1] Somar \n[2] Subtrair \n[3] Multiplicar \n[4] Dividir`))
+
+            res = document.querySelector('#result')
+            res.innerHTML = 'Calculando...'
+    
+            switch (op) {
+                case 1:
+                    res.innerHTML += `<p>${valor1} + ${valor2} = <strong>${valor1+valor2}</strong></p>`
+                    break
+                case 2: 
+                    res.innerHTML += `<p>${valor1} - ${valor2} = <strong>${valor1-valor2}</strong></p>`
+                    break 
+                case 3: 
+                    res.innerHTML += `<p>${valor1} x ${valor2} = <strong>${valor1*valor2}</strong></p>`
+                    break  
+                case 4:
+                    res.innerHTML += `<p>${valor1} / ${valor2} = <strong>${valor1/valor2.toLocaleString('pt-BR')}</strong></p>`
+                    break  
+                default:
+                    res.innerHTML += `<p>OPÇÃO INVÁLIDA! você digitou ${n1} e ${n2}, mas não sei o que fazer com eles.</p>`
+                    break
+            }   
+        }
+    </script>
+</body>
+</html>
