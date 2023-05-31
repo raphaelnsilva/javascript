@@ -16,25 +16,20 @@
     </style>
 </head>
 <body>
-    <h1>Contando de 1 a 10 (marcando os pares)</h1>
-    <button onclick="iniciar()">Contar de 1 a 10</button>
+    <h1>Contagem regressiva de 10 a 1</h1>
+    <button onclick="iniciar()">Contar de 10 a 1</button>
     <p id="saida">Aperte o botão acima para contar</p>
      
     <script>
         function iniciar() {
             let saida = document.querySelector('#saida')
-            saida.innerHTML = `<h2>Contando de 1 até 10, marcando os pares</h2>`
+            saida.innerHTML += '<h2>Contagem Regressiva de 10 a 1</h2>'
 
-            let c = 0
-            while (c <= 10) {
-                if (c % 2 == 0) {
-                    saida.innerHTML += ` <mark><strong>${c}</strong></mark>`
-                } else {
-                    saida.innerHTML += ` ${c}`
-                }
-                c ++
-            }
-            
+            let cont = 10 
+            while (cont >= 1) {
+                saida.innerHTML += ` ${cont}`
+                cont -- //corresponde a cont = -1 
+            }   //podemos fazer também "cont-= 1"
         }
     </script>
 </body>

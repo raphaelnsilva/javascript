@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            padding: 5px;
+        }
+
+        .botao {
+            padding: 5px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contagem "inteligente"</h1>
+    <p>Use qualquer valor nas caixas, simule contagens crescentes e regressivas. Use também valores negativos.</p>
+    <form action="#" method="get">
+        <div>
+            <label for="phpvalor1">Valor Inicial:</label>
+            <input type="number" name="phpvalor1" id="valor1" placeholder="Início da contagem">
+        </div>
+
+        <div>
+            <label for="phpvalor2">Valor final:</label>
+            <input type="number" name="phpvalor2" id="valor2" placeholder="Fim da contagem">
+        </div>
+
+        <div>
+            <input class="botao" type="submit" value="Contar" formaction="javascript:contar()">
+        </div>
+
+        <p id="saida">Preencha os dados acima e aperte o botão.</p>
+    </form>
+
+    <script>
+        function contar() {
+            let saida = document.querySelector('#saida')
+            let v1 = Number(document.querySelector('#valor1').value)
+            let v2 = Number(document.querySelector('#valor2').value)
+            saida.innerHTML += `<p>Contando de ${v1} até ${v2}</p>`
+
+            let cont
+
+            if (v1 < v2) {
+                cont = v1 
+                while (cont <= v2) {
+                    saida.innerHTML += ` ${cont} &#x1F499;`
+                    cont ++
+                }
+            } else if (v1 > v2) {
+                cont = v1 
+                while (cont >= v2) {
+                    saida.innerHTML += ` ${cont} &#x1F499;`
+                    cont--
+                }
+            } else {
+                saida.innerHTML += `Não é possível contar, pois os números são iguais`
+            }
+            saida.innerHTML += ` &#x1F3C1;`
+        }
+    </script>
+
+
+
+
+</body>
+</html>
