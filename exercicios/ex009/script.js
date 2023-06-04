@@ -1,12 +1,12 @@
-var contador = 0
-var res = document.querySelector('#result')
+let array = [contador = 0, res = document.querySelector('#result')]
+
 
 function contar() {
-    contador ++
-    res.innerHTML = `<p>O contador está com <mark>${contador}</mark> cliques.</p>` 
+    array[0] ++
+    array[1].innerHTML = `<p>O contador está com <mark>${array[0]}</mark> cliques.</p>` 
 }
 
 function zerar() {
-    contador = 0
-    res.innerHTML = `O contador está com <mark>0</mark> cliques.`
+    array[0] = 0
+    array[1].innerHTML = `O contador está com <mark>0</mark> cliques.`
 }

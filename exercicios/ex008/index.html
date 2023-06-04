@@ -24,7 +24,7 @@
         function cal() {
             let all = [Number(window.prompt('Digite um número:')), document.querySelector('#result')]
             
-            [1].innerHTML = `<p>O número a ser analisado aqui será: <strong>${all[0]}</strong></p><hr>`
+            all[1].innerHTML = `<p>O número a ser analisado aqui será: <strong>${all[0]}</strong></p><hr>`
             all[1].innerHTML += `<p>O seu valor absoluto é: <strong>${Math.abs(all[0])}</strong></p>`
             all[1].innerHTML += `<p>A sua parte inteira é: <strong>${Math.trunc(all[0])}</strong></p>`
             all[1].innerHTML += `<p>O valor inteiro mais próximo é: <strong>${Math.round(all[0])}</strong></p>`
