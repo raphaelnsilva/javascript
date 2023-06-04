@@ -22,11 +22,10 @@
 
     <script>
         function somar() {
-            var n1 = Number(window.prompt('Digite um número:'))
-            var n2 = Number(window.prompt('Digite outro número:'))
-            soma = n1 + n2
-            var res = document.querySelector('.result')
-            res.innerHTML = `A soma entre ${n1} e ${n2} é ${soma}!`
+            let array = [Number(window.prompt('digite um numero:')), Number(window.prompt('digite outro numero:')), document.querySelector('.result')]
+            
+            soma = array[0] + array[1]
+            array[2].innerHTML = `A soma entre ${array[0]} e ${array[1]} é ${soma}!`
         }
     </script>
 </body>

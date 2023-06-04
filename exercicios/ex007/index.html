@@ -22,15 +22,13 @@
     
     <script>
         function somar() {
-            var nome = window.prompt('Qual é o nome do aluno?')
-            var media1 = Number(window.prompt('Qual é sua primeira nota? :'))
-            var media2 = Number(window.prompt(`Além de ${media1} qual foi sua outra nota? :`))
-            media = (media1 + media2)/2
+            let array = [window.prompt('Qual é o nome do aluno?:'), Number(window.prompt('Qual é a sua primeira nota?:')), 
+            Number(window.prompt(`Além de ${array[1]}, qual foi a sua outra nota?:`)), document.querySelector('.result')]
 
-            var res = document.querySelector('.result')
-            res.innerHTML = `<p>Calculando a média final de ${nome}</p>`
-            res.innerHTML += `<p>As notas obtidas foram ${media1} e ${media2}</p>`
-            res.innerHTML += `<p>A média final será ${media}</p>`
+            media = (array[1] + array[2])/2
+            array[3].innerHTML = `<p>Calculando a média final de ${array[0]}</p>`
+            array[3].innerHTML += `<p>As notas obtidas foram ${array[1]} e ${array[2]}</p>`
+            array[3].innerHTML += `<p>A média final será ${media}</p>`
         }
     </script>
 </body>

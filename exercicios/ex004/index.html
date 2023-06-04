@@ -20,10 +20,10 @@
     <p id="resultado">Aqui vai aparecer o resultado..</p>
     
     <script>
+    
         function clicou() {
-            var nome = window.prompt("Qual é o seu nome?")
-            var res = document.querySelector('#resultado')
-            res.innerHTML = `Olá, ${nome}! É um grande prazer te conhecer! \u{1F601}`
+            var array = [document.querySelector('#resultado'), (window.prompt('qual é o seu nome'))]
+            array[0].innerHTML = `Olá, ${array[1]} ! É um grande prazer te conhecer!`
         }
     </script>
 </body>

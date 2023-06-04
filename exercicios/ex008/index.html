@@ -22,17 +22,16 @@
 
     <script>
         function cal() {
-            var numero = Number(window.prompt('Digite um número:'))
-
-            var res = document.querySelector('#result')
-            res.innerHTML = `<p>O número a ser analisado aqui será: <strong>${numero}</strong></p><hr>`
-            res.innerHTML += `<p>O seu valor absoluto é: <strong>${Math.abs(numero)}</strong></p>`
-            res.innerHTML += `<p>A sua parte inteira é: <strong>${Math.trunc(numero)}</strong></p>`
-            res.innerHTML += `<p>O valor inteiro mais próximo é: <strong>${Math.round(numero)}</strong></p>`
-            res.innerHTML += `<p>A sua raiz quadrada é: <strong>${Math.sqrt(numero)}</strong></p>`
-            res.innerHTML += `<p>A sua raiz cubica é: <strong>${Math.cbrt(numero)}</strong></p>`
-            res.innerHTML += `<p>O valor de <strong>${numero}<sup>2</sup></strong> é: <strong>${Math.pow(numero, 2)}</strong></p>`
-            res.innerHTML += `<p>O valor de <strong>${numero}<sup>2</sup></strong> é: <strong>${Math.pow(numero, 3)}</strong></p>`
+            let all = [Number(window.prompt('Digite um número:')), document.querySelector('#result')]
+            
+            [1].innerHTML = `<p>O número a ser analisado aqui será: <strong>${all[0]}</strong></p><hr>`
+            all[1].innerHTML += `<p>O seu valor absoluto é: <strong>${Math.abs(all[0])}</strong></p>`
+            all[1].innerHTML += `<p>A sua parte inteira é: <strong>${Math.trunc(all[0])}</strong></p>`
+            all[1].innerHTML += `<p>O valor inteiro mais próximo é: <strong>${Math.round(all[0])}</strong></p>`
+            all[1].innerHTML += `<p>A sua raiz quadrada é: <strong>${Math.sqrt(all[0])}</strong></p>`
+            all[1].innerHTML += `<p>A sua raiz cubica é: <strong>${Math.cbrt(all[0])}</strong></p>`
+            all[1].innerHTML += `<p>O valor de <strong>${all[0]}<sup>2</sup></strong> é: <strong>${Math.pow(all[0], 2)}</strong></p>`
+            all[1].innerHTML += `<p>O valor de <strong>${all[0]}<sup>2</sup></strong> é: <strong>${Math.pow(all[0], 3)}</strong></p>`
         }
         
 
