@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,11 +13,19 @@
     </header>
     <section>
         <div>
-            <p>Número:</p>
+            Numero (entre 1 e 100):
+            <input type="number" name="phpnumero" id="numero">
+            <input type="button" value="Adicionar">
+            <br><br><select name="phplista" id="lista" size="6"></select>
+            <br><input type="button" value="Finalizar">
         </div>
-        <div>
+        <div id="res">
 
         </div>
     </section>
+    <footer>
+        <p>&copy; Raphaelnsilva</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
