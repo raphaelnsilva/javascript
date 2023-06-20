@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio das mensagens</title>
-    <script src="Mensagens.js"></script>
+    <script src="Mensagens.js" defer></script>
  </head>
  <style>
     * {
@@ -21,13 +21,19 @@
         padding: 15px;
     }
  </style>
- <body>
-    <div id="container">
+ <body>   
+    <form id="login-tela">
         <h1>Desafio Das Mensagens</h1>
-        <button class="botao1">Botão 1</button>
-        <button class="botao2">Botão 2</button>
-        <button class="botao3">Botão 3</button>
+        <form action="" id="caixa-formulario">
+            
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="sobrenome" placeholder="Sobrenome">
+            <input type="submit" value="Enviar">
+        </form>
+        
+    <div class="logou">
+        <h1>Olá, você está logado</h1>
+        <button class="sair">Sair</button>
     </div>
-    <div class="res">Aqui vai aparecer qual botão você apertou</div>
  </body>
  </html>

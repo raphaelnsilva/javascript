@@ -23,7 +23,7 @@ function checkUser() {
 nameForm.addEventListener("submit", (e) => { // (e) reprensenta o evento em si 
     e.preventDefault()
 
-    const nameInput = document.querySelector('#name') // a variavel vai receber o que o usuario digitar no input
+    const nameInut = document.querySelector('#name') // a variavel vai receber o que o usuario digitar no input
 
     localStorage.setItem("name", nameInput.value) // vai salvar o valor da variavel na localStorage coom o nome de "name"
     
