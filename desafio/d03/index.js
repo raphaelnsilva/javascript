@@ -1,13 +1,17 @@
-const resultado = document.querySelector('#result')
+let run = document.querySelector("#button") 
 
-function mensagem(Number) {
-    let res = document.createElement("p") 
+function mensagem() {
+     
+    let n = Number(window.prompt("digite um numero inteiro:"))
+
+    if (n) { 
+    window.alert(`antes de ${n} temos o numero ${n - 1} \n depois do ${n} temos o numero ${n + 1}`)
+    } else {
+        window.alert('[erro] você não digitou um número!')
+    }
+    
 }
 
-let initial = document.querySelector("#numero")
-
-initial.addEventListener('click', () => {
-    let number = Number(window.prompt("Digite um número inteiro qualquer"))
-    mensagem(Number)
-
+run.addEventListener("click", () => {
+    mensagem()
 })
