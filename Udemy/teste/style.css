@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+body {
+   background-image: url('../imagens/bg.jpg');
+   position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.header-page {
+    background: linear-gradient(to bottom, #e66465,  #9198e5);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.438);
+}
+
+.header-page > div {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+
+
+button {
+    background-color: #fdfdfd;
+    color: #102F5e;
+    border: 2px solid #102F5e;
+    padding: .3rem .6rem;
+    font-size: 1rem; /* tamanho dos icones */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #102F5e;
+}
+
+button:hover > i {
+    color: white;
+}
+
+button i {
+    color: #102f5e;
+    pointer-events: none;
+    font-size: 25px;
+}
+
+input, 
+select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* to do header*/
+
+.todo-container {
+    max-width: 470px; /* LARGURA DO CONTAINER */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1.5rem;
+    border-radius:15px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.527);
+}
+
+.todo-container header {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 0 1rem 1rem; 
+    font-size: 0.8em;
+}
+
+/* To do Form*/
+
+#todo-form, #edit-form {
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid #ccc; /* cria a linha que divide as coisas */
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-control {
+    display: flex; /* coloca os botões ao lado da caixa de input. */
+}
+
+.form-control input {
+    width: 300px; /* Largura do input */
+    margin-right: 0.3rem; /* da um espaço entre o input e o botão. */
+    padding-left: 5px;
+} 
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* Todo toolbar */ 
+
+.toolbar {
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    font-size: 12px;
+}
+
+.toolbar h4 {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.search {
+    border-right: 1px solid #ddd; /* cria a linha na vertical */
+    padding-right: 9rem;
+    margin-right: 1rem;
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search form {
+    display: flex;
+}
+
+.search input {
+    margin-right: 0.3rem;
+    width: 169px;
+}
+
+.filter {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter select {
+    flex: 1;
+}
+
+/*todo list*/
+
+.todo {
+    align-items: center;
+    padding: 20px 8px 10px 8px;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3 {
+    font-size: 15px;  
+    font-style: italic; 
+    padding-bottom: 10px; 
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+} 
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 6px; /* da o espaçamento entre os botões */
+}
