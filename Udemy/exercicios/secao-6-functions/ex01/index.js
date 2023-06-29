@@ -1,5 +1,3 @@
-function print() {
-    console.log('Hello World!');
+function countVowels(string) {
+    for (let v = 0)
 }
-
-print();
